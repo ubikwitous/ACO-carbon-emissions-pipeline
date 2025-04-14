@@ -1,0 +1,30 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables or secrets
+.env
+*.env
+config.json
+
+# Jupyter/IPython history
+.ipynb_checkpoints/
+
+# Microsoft Fabric Notebook metadata
+*.notebook
+
+# VS Code settings
+.vscode/
+
+# MacOS or system files
+.DS_Store
+Thumbs.db
+
+# Logs and temp files
+*.log
+*.tmp
+
+# Python virtual environments
+venv/
+env/
