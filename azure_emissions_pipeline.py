@@ -50,7 +50,7 @@ months = sorted(months)
 
 # === TRY TO READ EXISTING MONTH+SCOPE COMBINATIONS ===
 try:
-    existing_df = spark.sql("SELECT DISTINCT reportMonth, emissionScope FROM item_details_emissions_test")
+    existing_df = spark.sql("SELECT DISTINCT reportMonth, emissionScope FROM item_details_emissions")
     existing_pairs = {(row["reportMonth"], row["emissionScope"]) for row in existing_df.collect()}
 except Exception:
     print("⚠️ No existing table found — will create it.")
@@ -122,7 +122,7 @@ for month in months:
 
                 df = df[list(expected_schema.keys())]  # reorder
                 spark_df = spark.createDataFrame(df)
-                spark_df.write.mode("append").saveAsTable("item_details_emissions_test")
+                spark_df.write.mode("append").saveAsTable("item_details_emissions")
                 print(f"📦 Appended {month} {scope} data to Lakehouse table.")
             else:
                 print(f"⚠️ No data for {month} - {scope}")
