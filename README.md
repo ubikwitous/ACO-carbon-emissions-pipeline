@@ -82,4 +82,21 @@ subscription_id = "YOUR_SUBSCRIPTION_ID"
      - **Time zone**: Set according to your needs
    - Click `Apply` and `Run`
 
+```
+## 📊 Using the Power BI Template and Reconnecting to your Fabric Model
 
+When opening the '.pbit' file in Power BI desktop, you will see an error stating "Unable to connect." Connect it to your Fabric Model after the data exists.
+
+## 🛠 Setup Requirements for the Power BI
+
+You’ll need:
+
+- Power BI desktop installed
+- The script should have created and populated the item_details_emissions table
+- You created a semantic model for the item_details_emissions table in Fabric
+
+## 💻 Power BI and Model Connection
+1. Click Edit on the initial error screen in Power BI desktop.
+2. Select your sematic model from the OneLake Catalog.
+3. Click Connect.
+4. Once you've verified the model works, review and publish your dashboard to Fabric!
