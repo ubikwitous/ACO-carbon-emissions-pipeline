@@ -100,3 +100,9 @@ You’ll need:
 2. Select your sematic model from the OneLake Catalog.
 3. Click Connect.
 4. Once you've verified the model works, review and publish your dashboard to Fabric!
+
+## Dashboard Preview
+
+Here's a sample view of the Power BI emissions dashboard included in this rep:
+
+![Dashboard Screenshot](assets/dashboard-preview.png)
