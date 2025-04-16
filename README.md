@@ -59,7 +59,7 @@ tenant_id = "YOUR_TENANT_ID"
 client_id = "YOUR_CLIENT_ID"
 client_secret = "YOUR_CLIENT_SECRET"
 subscription_id = "YOUR_SUBSCRIPTION_ID"
-
+```
 ## 📅 Set a trigger to run monthly using a Microsoft Fabric Notebook
 
 1. **Publish Your Notebook**
@@ -82,7 +82,6 @@ subscription_id = "YOUR_SUBSCRIPTION_ID"
      - **Time zone**: Set according to your needs
    - Click `Apply` and `Run`
 
-```
 ## 📊 Using the Power BI Template and Reconnecting to your Fabric Model
 
 When opening the '.pbit' file in Power BI desktop, you will see an error stating "Unable to connect." Connect it to your Fabric Model after the data exists.
